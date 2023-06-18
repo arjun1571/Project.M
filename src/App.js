@@ -10,7 +10,6 @@ function App() {
       <NavBar></NavBar>
       <hr />
       <MainBar></MainBar>
-
     </div>
   );
 }
