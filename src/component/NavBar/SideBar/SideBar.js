@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome , faMessage, faTasks , faPeopleGroup, faGear } from '@fortawesome/free-solid-svg-icons'
 
 const SideBar = () => {
     return (
@@ -11,10 +13,14 @@ const SideBar = () => {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+    <ul className="menu p-4 w-72 h-full bg-base-200 text-base-content">
       {/* Sidebar content here */}
-      <li><h1>Sidebar Item 1</h1></li>
-      <li><h1>Sidebar Item 2</h1></li>
+      <li><h1><FontAwesomeIcon icon={faHome} /> Home</h1></li>
+      <li><h1><FontAwesomeIcon icon={faMessage} /> Messages</h1></li>
+      <li><h1><FontAwesomeIcon icon={faTasks} /> Tasks</h1></li>
+      <li><h1><FontAwesomeIcon icon={faPeopleGroup} /> Member</h1></li>
+      <li><h1><FontAwesomeIcon icon={faGear} /> Settings</h1></li>
+      <hr />
     </ul>
   
   </div>
