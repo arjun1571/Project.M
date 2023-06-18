@@ -10,9 +10,9 @@ const MainBar = () => {
             <div className='w-1/4 hidden lg:block '>
             <SideBar></SideBar>
             </div>
-            <div className='w-3/4 mt-10'>
+            <div className='w-3/4 mt-5'>
                 <RightSide></RightSide>
-                <div className='mt-10 mx-2  grid grid-cols-3 gap-5'>
+                <div className='mt-5 mx-2  grid grid-cols-3 gap-5'>
                 <CardContainer></CardContainer>
                 <OnPress></OnPress>
                 </div>
