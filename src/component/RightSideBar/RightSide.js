@@ -23,7 +23,7 @@ const RightSide = () => {
                 </div>
                 
             </div>
-            <div className='mt-10'>
+            <div className='mt-10 mx-2'>
                 <HeadingDrop></HeadingDrop>
             </div>
         </>

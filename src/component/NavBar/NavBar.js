@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className="flex-1">
           <FontAwesomeIcon icon={faShapes} className='mx-3'  />
           <h1 className="btn btn-ghost normal-case text-xl">Project.M</h1>
-          <div className='flex  lg:mx-40  '>
+          <div className='flex  lg:mx-36  '>
             <img className='lg:block hidden'  src={SideIcon} alt="" />
             <img className='lg:block hidden' src={SideIcon} alt="" />
           </div>
