@@ -4,14 +4,16 @@
       "name": "Brainstorming",
       "cmd": "12",
       "file": "0",
-      "status":"Low"
+      "status":"Low",
+      "content":"Brainstorming brings team members' diverse experience into play."
     },
     {
       "id": 2,
       "name": "Research",
       "cmd": "10",
       "file": "3",
-      "status":"High"
+      "status":"High",
+      "content":"User research helps you to create an optimal product for users."
     
     },
     {
@@ -19,7 +21,8 @@
       "name": "Wireframes",
       "cmd": "8",
       "file": "5",
-      "status":"High"
+      "status":"High",
+      "content":"Low fidelity wireframes include the most basic content and visuals."
       
     }
 ]

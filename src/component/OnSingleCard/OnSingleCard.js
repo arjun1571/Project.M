@@ -7,6 +7,7 @@ import Img3 from "../../image/Ellipse 14.png"
 
 
 const OnSingleCard = ({Opd}) => {
+    const {cmd,img1,img,file}=Opd
     return (
         <div className='mb-5 mt-5 '>
             <div className="card bg-white shadow">
@@ -16,11 +17,10 @@ const OnSingleCard = ({Opd}) => {
             <FontAwesomeIcon icon={faEllipsis}  />
             </div>
             <div className='flex'>
-            <figure><img src={Opd?.img} alt="Shoes" /></figure>
-            <figure><img className='' src={Opd?.img1} alt='' /></figure>
+            <figure><img src={img} alt="Shoes" /></figure>
+            <figure><img className='' src={img1} alt='' /></figure>
             </div>
             <h2 className="card-title">{Opd.name}</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className='flex justify-between '>
                 <div className='flex w-5 mr-10'>
                     <img src={Img1} alt="" />
@@ -28,10 +28,10 @@ const OnSingleCard = ({Opd}) => {
                     <img src={Img3} alt="" />
                 </div>
                 <div>
-                    <h1><FontAwesomeIcon icon={faMessage}  /> 12 comments</h1>
+                    <h1><FontAwesomeIcon icon={faMessage}  /> {cmd} comments</h1>
                 </div>
                 <div>
-                    <h1><FontAwesomeIcon icon={faFile}  /> 0 files</h1>
+                    <h1><FontAwesomeIcon icon={faFile}  /> {file} files</h1>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ import Img2 from "../../image/Ellipse 13.png"
 import Img3 from "../../image/Ellipse 14.png"
 
 const SingleCard = ({pd}) => {
-    const {name,cmd,status,file}=pd
+    const {name,cmd,status,file,content}=pd
     return (
         <div className='mb-5 mt-5 '>
             <div className="card bg-white shadow">
@@ -16,7 +16,7 @@ const SingleCard = ({pd}) => {
             <FontAwesomeIcon icon={faEllipsis}  />
             </div>
             <h2 className="card-title">{name}</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>{content}</p>
             <div className='flex justify-between '>
                 <div className='flex w-5 mr-10'>
                     <img src={Img1} alt="" />
