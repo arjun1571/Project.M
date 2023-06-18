@@ -2,11 +2,16 @@ import React from 'react';
 import Profile from "../../image/image 1.png"
 import Icon from "../../image/Group 640.png"
 import SideIcon from "../../image/Vector.png"
+import { faShapes} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => {
     return (
+      
         <div className="navbar bg-base-100 flex justify-between">
+          {/* website name and logo */}
         <div className="flex-1">
+          <FontAwesomeIcon icon={faShapes} className='mx-3'  />
           <h1 className="btn btn-ghost normal-case text-xl">Project.M</h1>
           <div className='flex  lg:mx-40  '>
             <img className='lg:block hidden'  src={SideIcon} alt="" />
@@ -16,6 +21,7 @@ const NavBar = () => {
             <input type="text" placeholder="Search for anathing..." className="input input-bordered lg:w-96 md:w-auto" />
           </div>
         </div>
+        {/* Right site navigation section  */}
         <div className="flex-none gap-5">
           
           <div className='mx-5 hidden lg:block '>

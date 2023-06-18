@@ -4,7 +4,7 @@ import RightSide from '../RightSideBar/RightSide';
 
 const MainBar = () => {
     return (
-        <div className='flex'>
+        <div className='flex  divide-x'>
             <div className='w-1/4 hidden lg:block'>
             <SideBar></SideBar>
             </div>
