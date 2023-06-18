@@ -1,21 +1,25 @@
+import { faEllipsis, faFile, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMessage,faFile,faEllipsis } from '@fortawesome/free-solid-svg-icons'
 import Img1 from "../../image/Ellipse 12.png"
 import Img2 from "../../image/Ellipse 13.png"
 import Img3 from "../../image/Ellipse 14.png"
 
-const SingleCard = ({pd}) => {
-    const {name,cmd,status,file}=pd
+
+const OnSingleCard = ({Opd}) => {
     return (
         <div className='mb-5 mt-5 '>
             <div className="card bg-white shadow">
         <div className="card-body">
             <div className='flex justify-between '>
-            <button className="btn btn-sm bg-orange-300">{status}</button>
+            <button className="btn btn-sm bg-orange-300">Low</button>
             <FontAwesomeIcon icon={faEllipsis}  />
             </div>
-            <h2 className="card-title">{name}</h2>
+            <div className='flex'>
+            <figure><img src={Opd?.img} alt="Shoes" /></figure>
+            <figure><img className='' src={Opd?.img1} alt='' /></figure>
+            </div>
+            <h2 className="card-title">{Opd.name}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className='flex justify-between '>
                 <div className='flex w-5 mr-10'>
@@ -24,10 +28,10 @@ const SingleCard = ({pd}) => {
                     <img src={Img3} alt="" />
                 </div>
                 <div>
-                    <h1><FontAwesomeIcon icon={faMessage}  /> {cmd} comments</h1>
+                    <h1><FontAwesomeIcon icon={faMessage}  /> 12 comments</h1>
                 </div>
                 <div>
-                    <h1><FontAwesomeIcon icon={faFile}  /> {file} files</h1>
+                    <h1><FontAwesomeIcon icon={faFile}  /> 0 files</h1>
                 </div>
             </div>
         </div>
@@ -36,4 +40,4 @@ const SingleCard = ({pd}) => {
     );
 };
 
-export default SingleCard;
+export default OnSingleCard;
