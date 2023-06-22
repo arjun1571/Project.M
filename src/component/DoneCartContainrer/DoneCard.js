@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import DoneSingleCard from '../DoneSingleCard/DoneSingleCard';
 const DoneCard = () => {
     const [Ddata,setDdata]=useState([])
-    fetch('DoneData.json')
-    .then(res => res?.json())
-    .then(data => setDdata(data))
+    useEffect(()=>{
+        fetch('DoneData.json')
+        .then(res => res?.json())
+        .then(data => setDdata(data))
+    },[])
     return (
         <div className='p-5 bg-base-200 rounded-xl'>
             <div className='divide-y-4 divide-violet-700 '>

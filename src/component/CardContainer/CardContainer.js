@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle,faPlus } from '@fortawesome/free-solid-svg-icons'
 
 const CardContainer = () => { 
     const [cdata,setCdata]=useState([])
-    fetch('ToDoData.json')
-    .then(res => res?.json())
-    .then(data => setCdata(data))
+    useEffect(()=>{
+        fetch('ToDoData.json')
+        .then(res => res?.json())
+        .then(data => setCdata(data))
+    },[])
    
     return (
         <div className='p-5 bg-base-200 rounded-xl'>

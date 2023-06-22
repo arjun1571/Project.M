@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OnSingleCard from '../OnSingleCard/OnSingleCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const OnPress = () => {
     const [OnData,setOndata]=useState([])
-    fetch('OnPressDB.json')
-    .then(res => res?.json())
-    .then(data => setOndata(data))
+    useEffect(()=>{
+        fetch('OnPressDB.json')
+        .then(res => res?.json())
+        .then(data => setOndata(data))
+    },[])
     return (
         <div className='p-5 bg-base-200 rounded-xl'>
             <div className='divide-y-4 divide-orange-400 '>

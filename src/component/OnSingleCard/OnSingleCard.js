@@ -9,7 +9,7 @@ import Img3 from "../../image/Ellipse 14.png"
 const OnSingleCard = ({Opd}) => {
     const {cmd,img1,img,file}=Opd
     return (
-        <div className='mb-5 mt-5 '>
+        <div className='mb-5 mt-5 sm:w-full '>
             <div className="card bg-white shadow">
         <div className="card-body">
             <div className='flex justify-between '>
